@@ -10,3 +10,6 @@ a separate UDP socket connection so that replies (should) go to the correct
 client.
 
 Changes to UID/GID 65534 before forking.
+
+sudo apt install clang
+sudo apt install --no-install-recommends libasio-dev
