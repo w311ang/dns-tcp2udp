@@ -1,3 +1,6 @@
+sudo apt install clang
+sudo apt install --no-install-recommends libasio-dev
+
 Usage: dns-tcp2udp <dest ip> <listen ip> [listen ip]...
 
 Accepts TCP connections from one or more <listen ip> and forwards them using
@@ -10,6 +13,3 @@ a separate UDP socket connection so that replies (should) go to the correct
 client.
 
 Changes to UID/GID 65534 before forking.
-
-sudo apt install clang
-sudo apt install --no-install-recommends libasio-dev
