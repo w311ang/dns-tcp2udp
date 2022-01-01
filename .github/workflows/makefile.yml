@@ -16,8 +16,8 @@ jobs:
     
     - name: configure
       run: |
-        sudo apt install clang
-        sudo apt install --no-install-recommends libasio-dev
+        sudo apt-get install clang
+        sudo apt-get install --no-install-recommends libasio-dev
       
     - name: Install dependencies
       run: make ARCH=arm
