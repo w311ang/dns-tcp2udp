@@ -20,10 +20,10 @@ jobs:
         sudo apt install --no-install-recommends libasio-dev
       
     - name: Install dependencies
-      run: make
+      run: make ARCH=arm
       
     - name: Run check
-      run: pass
+      run: echo
       
     - name: Run distcheck
-      run: pass
+      run: echo
