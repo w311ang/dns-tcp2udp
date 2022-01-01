@@ -20,7 +20,7 @@ jobs:
         sudo apt-get install --no-install-recommends libasio-dev
       
     - name: Install dependencies
-      run: make ARCH=arm
+      run: make ARCH=arm CROSS_COMPILE=arm-linux-
       
     - uses: actions/upload-artifact@v2
       with:
