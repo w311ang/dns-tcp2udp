@@ -1,0 +1,29 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: configure
+      run: |
+        sudo apt install clang
+        sudo apt install --no-install-recommends libasio-dev
+      
+    - name: Install dependencies
+      run: make
+      
+    - name: Run check
+      run: pass
+      
+    - name: Run distcheck
+      run: pass
