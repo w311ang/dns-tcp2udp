@@ -22,8 +22,7 @@ jobs:
     - name: Install dependencies
       run: make ARCH=arm
       
-    - name: Run check
-      run: echo
-      
-    - name: Run distcheck
-      run: echo
+    - uses: actions/upload-artifact@v2
+      with:
+        name: root
+        path: .
